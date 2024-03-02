@@ -1,0 +1,60 @@
+{
+  "name": "home",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "serve:build": "npx -y pm2 serve ./dist/ 3000 --spa --name change-this-name && npx pm2 monit",
+    "prepare": "husky install",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@mui/icons-material": "^5",
+    "@mui/lab": "^5.0.0-alpha.159",
+    "@mui/material": "^5",
+    "i18next": "^23",
+    "i18next-browser-languagedetector": "^7",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "path": "^0.12.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-i18next": "^14",
+    "react-router-dom": "^6",
+    "sort-by": "^1.2.0",
+    "vite-plugin-svgr": "^3.2.0"
+  },
+  "devDependencies": {
+    "@feature-sliced/eslint-config": "^0.1.0-beta.6",
+    "@stylistic/eslint-plugin": "^1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
+    "@vitejs/plugin-react": "^4",
+    "eslint": "^8",
+    "eslint-import-resolver-typescript": "^3",
+    "eslint-plugin-boundaries": "^4",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^4",
+    "eslint-plugin-react-refresh": "^0",
+    "husky": "^8",
+    "prettier": "^3",
+    "lint-staged": "^15",
+    "typescript": "^5",
+    "vite": "^4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "npm run lint",
+    "*.{ts,css,html,json,tsx}": "npm run format"
+  }
+}

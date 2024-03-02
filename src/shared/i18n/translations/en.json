@@ -1,0 +1,25 @@
+{
+  "common": {
+    "lol": "kek"
+  },
+  "app": {
+    "test a": "test app"
+  },
+  "pages": {
+    "test p": "test pages"
+  },
+  "widgets": {
+    "test w": "test widget"
+  },
+  "features": {
+    "test f": "test f"
+  },
+  "entities": {
+    "test e": "test e"
+  },
+  "shared": {
+    "test obj": {
+      "test sh": "test shared"
+    }
+  }
+}
