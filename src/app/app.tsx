@@ -1,13 +1,7 @@
-import { Fragment } from 'react'
-
 import { ComposeProviders } from './providers'
 
 function App() {
-  return (
-    <Fragment>
-      <ComposeProviders />
-    </Fragment>
-  )
+  return <ComposeProviders />
 }
 
 export default App
