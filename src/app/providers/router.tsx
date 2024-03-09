@@ -5,21 +5,21 @@ import {
 
 import { AuthPageRouter } from '@pages/auth-page'
 import { MainPageRouter } from '@pages/main'
+import { TestAuthRoute } from '@pages/test-auth'
 import { UiKitPageRouter } from '@pages/ui-kit'
 
 import { routePaths } from '@shared/constants'
 
-import { AuthLayout, MainLayout } from './layouts'
+import { MainLayout } from './layouts'
 
 const router = createBrowserRouter([
   {
     path: routePaths.home,
     element: <MainLayout />,
-    children: [MainPageRouter, ...UiKitPageRouter],
+    children: [MainPageRouter, ...UiKitPageRouter, TestAuthRoute],
   },
   {
     path: routePaths.auth,
-    element: <AuthLayout />,
     children: [AuthPageRouter],
   },
 ])

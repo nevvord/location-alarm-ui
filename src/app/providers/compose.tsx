@@ -1,14 +1,30 @@
 import { GoogleOAuthProvider } from '@react-oauth/google'
+import { Bounce, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+import { GOOGLE_CLIENT_ID } from '@shared/constants'
+
 import { RouterProvider } from './router'
 import { ThemeProvider } from './theme'
-
-const clientId =
-  '668153868575-fsu75sq9bjl077n9npobequrj7dp77te.apps.googleusercontent.com'
 
 export function ComposeProviders() {
   return (
     <ThemeProvider>
-      <GoogleOAuthProvider clientId={clientId}>
+      <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+        <ToastContainer
+          position="bottom-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          transition={Bounce}
+        />
+
         <RouterProvider />
       </GoogleOAuthProvider>
     </ThemeProvider>

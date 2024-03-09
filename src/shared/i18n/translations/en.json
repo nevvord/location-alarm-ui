@@ -2,17 +2,17 @@
   "common": {
     "lol": "kek"
   },
-  "app": {
-    "test a": "test app"
-  },
   "pages": {
-    "test p": "test pages"
+    "test w": "test pages"
   },
   "widgets": {
     "test w": "test widget"
   },
   "features": {
-    "test f": "test f"
+    "auth": {
+      "auth-error": "Authorization failed, please try again later",
+      "auth-button": "Continue with Google"
+    }
   },
   "entities": {
     "test e": "test e"
