@@ -7,7 +7,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/strict",
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
     "@feature-sliced/eslint-config/rules/import-order",
@@ -47,8 +47,10 @@
           "**/date-fns/*",
           "**react-dom/*",
           "**shared/i18n*",
+          "**shared/i18n/**",
           "react-simple-keyboard/**",
-          "@hookform/**"
+          "@hookform/**",
+          "react-toastify/**"
         ]
       }
     ],
@@ -102,6 +104,7 @@
         "prev": ["interface", "type"],
         "next": "*"
       }
-    ]
+    ],
+    "@typescript-eslint/no-non-null-assertion": "warn"
   }
 }
