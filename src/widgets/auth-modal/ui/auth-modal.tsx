@@ -21,7 +21,7 @@ export function AuthModal() {
   return (
     <Drawer
       anchor="bottom"
-      open={isShowAuth}
+      open={!isShowAuth}
       onClose={() => setIsShowAuth(false)}
       aria-describedby="Auth-dialog"
       sx={{

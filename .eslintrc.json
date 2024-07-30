@@ -50,7 +50,8 @@
           "**shared/i18n/**",
           "react-simple-keyboard/**",
           "@hookform/**",
-          "react-toastify/**"
+          "react-toastify/**",
+          "leaflet/**"
         ]
       }
     ],

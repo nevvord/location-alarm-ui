@@ -18,9 +18,9 @@ export function MainLayout() {
 
   return (
     <Box height="100%">
-      {isLoading && <GlobalLoader />}
+      {/* {isLoading && <GlobalLoader />} */}
       <Outlet />
-      <AuthModal />
+      {/* <AuthModal /> */}
     </Box>
   )
 }
