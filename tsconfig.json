@@ -6,14 +6,17 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -27,9 +30,11 @@
       "@features/*": ["features/*"],
       "@widgets/*": ["widgets/*"],
       "@pages/*": ["pages/*"],
-      "@app/*": ["app/*"]
+      "@app/*": ["app/*"],
+      "@libs/*": ["libs/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/shared/@types/custom.d.ts"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

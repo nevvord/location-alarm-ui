@@ -1,1 +1,1 @@
-export * from './main-page.tsx'
+export * from './main-page'
